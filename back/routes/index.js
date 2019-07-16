@@ -11,11 +11,22 @@ router.get('/', (req, res) => {
   });
 });
 
-// Test récupération de tous les films
+// Test récupération de tous les artistes
 router.get('/api/artists', (req, res) => {
   connection.query('SELECT * FROM artist', (err, results) => {
     if (err) {
       res.status(500).send('Erreur lors de la récupération de tous les artistes');
+    } else {
+      res.json(results);
+    }
+  });
+});
+
+// Test récupération de tous les événements
+router.get('/api/events', (req, res) => {
+  connection.query('SELECT * FROM event', (err, results) => {
+    if (err) {
+      res.status(500).send('Erreur lors de la récupération de tous les événements');
     } else {
       res.json(results);
     }
