@@ -1,25 +1,27 @@
 import React from 'react';
 import { Nav, NavItem, NavLink } from 'reactstrap';
 
-export default class Example extends React.Component {
+import './NavBar.scss';
+
+export default class NavBar extends React.Component {
   render() {
     return (
-      <div>
+      <div className="NavBar">
         <Nav>
           <NavItem>
-            <NavLink href="/">Wild Circus 2.0</NavLink>
+            <NavLink href="/" style={{color: 'black'}}>Wild Circus 2.0</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/AlbumList">Tous les Artistes</NavLink>
+            <NavLink href="/ArtistList" style={{color: 'black'}}>All artists</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#">Tous les événements</NavLink>
+            <NavLink href="/EventList" style={{color: 'black'}}>All events</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#">Contactez-nous</NavLink>
+            <NavLink href="/Contact" style={{color: 'black'}}>Contact us</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#">Espace Administration</NavLink>
+            <NavLink href="/Admin" style={{color: 'black'}}>Admin</NavLink>
           </NavItem>
         </Nav>
       </div>

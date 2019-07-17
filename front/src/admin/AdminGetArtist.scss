@@ -1,0 +1,16 @@
+.AdminGetArtist {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  .titleAllArtists{
+    font-size: 70px;
+  }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
