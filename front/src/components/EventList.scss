@@ -1,0 +1,12 @@
+.EventList {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}

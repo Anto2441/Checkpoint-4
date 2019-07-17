@@ -1,0 +1,32 @@
+.Footer {
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+
+  .logos {
+    display: flex;
+    justify-content: center;
+
+    .github {
+      margin-right: 10px;
+    }
+    .linkedin {
+      margin-right: 10px;
+    }
+    .pinterest {
+      margin-right: 10px;
+    }
+    .twitter {
+      margin-right: 10px;
+    }
+  }
+
+  .signature {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
