@@ -21,7 +21,7 @@ export default class NavBar extends React.Component {
             <NavLink href="/Contact" style={{color: 'black'}}>Contact us</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#" style={{color: 'black'}}>Admin</NavLink>
+            <NavLink href="/Admin" style={{color: 'black'}}>Admin</NavLink>
           </NavItem>
         </Nav>
       </div>
