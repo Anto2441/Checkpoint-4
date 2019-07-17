@@ -3,8 +3,10 @@ const express = require('express');
 const httpErrors = require('http-errors');
 const logger = require('morgan');
 const path = require('path');
-
 const cors = require('cors');
+
+const artist = require('./routes/artist');
+const event = require('./routes/event');
 
 const indexRouter = require('./routes/index');
 const mail = require('./routes/mail');
@@ -20,6 +22,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/api/send', mail);
+app.use('/api/artists', artist);
+app.use('/api/events', event);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
