@@ -7,9 +7,11 @@ const cors = require('cors');
 
 const artist = require('./routes/artist');
 const event = require('./routes/event');
+const mail = require('./routes/mail');
+const auth = require('./routes/auth');
 
 const indexRouter = require('./routes/index');
-const mail = require('./routes/mail');
+
 
 const app = express();
 app.use(cors());
@@ -24,6 +26,8 @@ app.use('/', indexRouter);
 app.use('/api/send', mail);
 app.use('/api/artists', artist);
 app.use('/api/events', event);
+app.use('/api/auth', auth);
+
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
